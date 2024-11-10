@@ -9,22 +9,9 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "SEMESTER_LONG_PROJECT",
             "username": "root",
-            "database": "movie_database"
-        },
-        {
-            "mysqlOptions": {
-                "authProtocol": "default",
-                "enableSsl": "Disabled"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 3306,
-            "driver": "MySQL",
-            "name": "school",
-            "username": "root",
-            "database": "school"
+            "database": "ucu_blog",
+            "name": "SCHOOL_DB"
         }
     ],
     "git.ignoreLimitWarning": true
