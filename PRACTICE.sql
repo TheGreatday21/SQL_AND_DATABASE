@@ -1,4 +1,4 @@
--- Active: 1731759726794@@127.0.0.1@3306@movies_data
+-- Active: 1731387864684@@127.0.0.1@3306@practice
 
 
 USE practice;
@@ -39,8 +39,24 @@ VALUES (1, "Eugene","Crabs",20.1,"2023-01-02"),
 (2,"Squidward","Tentacles",10.1,"2023-04-24"),
 (3,"Patrick","Star",3.1,"2023-10-10"),
 (4,"Sandy","Bucket",19.1,"2023-07-19");
-
 --we can also specify the rows we want to insert data into here--
+
+
+CREATE TABLE employees_2(
+    employee_id INT PRIMARY KEY ,
+    first_name VARCHAR (64),
+    last_name VARCHAR(64),
+    hourly_pay DECIMAL(5,2),
+    hire_date DATETIME(now)
+);
+DROP TABLE employees_2;
+
+ALTER TABLE employees_2
+DATETIME == CURRENT_TIME;
+
+INSERT INTO employees_2
+VALUES(10,"Elijah","KAK",30.1)
+
 
 
 
@@ -274,6 +290,7 @@ FROM transaction INNER JOIN customers
 ON transaction.customer_id = customers.customer_id;
 --SQL selects all rows that have matching ids
 --we can also select specific columns 
+
 SELECT transaction_id,amount,first_name,last_name
 FROM transaction INNER JOIN customers
 ON transaction.customer_id = customers.customer_id;
